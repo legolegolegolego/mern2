@@ -13,7 +13,7 @@ const Home = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("https://mern2-4fri.onrender.com/products/");
+      const response = await axios.get("https://mern2-front-msv4.onrender.com/products/");
       setProducts(response.data);
     } catch (error) {
       console.error("Error al obtener los productos:", error);
@@ -34,7 +34,7 @@ const Home = () => {
     }
   
     try {
-      await axios.post("https://mern2-4fri.onrender.com/products/", newProduct, {
+      await axios.post("https://mern2-front-msv4.onrender.com/products/", newProduct, {
         headers: { Authorization: `Bearer ${token}` }, // Enviar token en la cabecera
       });
   
