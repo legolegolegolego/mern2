@@ -6,8 +6,8 @@ const Start = () => {
 
   return (
     <div>
-      <h1>Bienvenido</h1>
-      <p>Por favor, elige una opción:</p>
+      <h1>Bienvenido pisha</h1>
+      <p>Illo que:</p>
       <button onClick={() => navigate("/login")}>Iniciar Sesión</button>
       <button onClick={() => navigate("/signup")}>Registrarse</button>
     </div>

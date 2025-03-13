@@ -1,6 +1,5 @@
 const express = require("express");
-const Product = require("../Models/Product"); // Asegúrate de tener un modelo Product
-//const ensureAuthenticated = require("../Middlewares/Auth"); // Middleware para proteger las rutas
+const Product = require("../Models/Product");
 const router = express.Router();
 
 // Obtener todos los productos
