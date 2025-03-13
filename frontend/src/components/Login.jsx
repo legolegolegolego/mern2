@@ -16,11 +16,12 @@ const Login = () => {
       [e.target.name]: e.target.value,
     });
   };
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://mern2-ipka.onrender.com/auth/login", formData);
+      const response = await axios.post("https://mern2-4fri.onrender.com/auth/login", formData);
       alert("Inicio de sesión exitoso");
       localStorage.setItem("token", response.data.token); // Guardar el token en el almacenamiento local´
       localStorage.setItem("username", response.data.name); // Guardar el nombre del usuario en el almacenamiento local

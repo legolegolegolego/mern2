@@ -21,7 +21,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://mern2-ipka.onrender.com/auth/signup", formData);
+      const response = await axios.post("https://mern2-4fri.onrender.com/auth/signup", formData);
       alert("Registro exitoso: " + response.data.message);
       navigate("/login"); // Redirigir al login después de registrarse
     } catch (error) {
